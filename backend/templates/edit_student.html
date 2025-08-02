@@ -1,0 +1,8 @@
+<form action="/students/update" method="post">
+  <input type="hidden" name="original_name" value="{{ student.name }}">
+  <input type="text" name="name" value="{{ student.name }}" required>
+  <input type="text" name="grade" value="{{ student.grade }}" required>
+  <input type="text" name="interests" value="{{ student.interests }}">
+  <input type="number" name="age" value="{{ student.age }}" required>
+  <button type="submit" class="btn btn-success">💾 ذخیره تغییرات</button>
+</form>

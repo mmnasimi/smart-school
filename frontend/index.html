@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+<script>
+  // This script is used to handle the loading of the main React application
+  // It ensures that the React app is loaded after the DOM is fully parsed
+  document.addEventListener("DOMContentLoaded", () => {
+    const root = document.getElementById("root");
+    if (root) {
+      import("/src/main.jsx").catch((error) => {
+        console.error("Error loading the main React application:", error);
+      });
+    } else {
+      console.error("Root element not found");
+    }
+  });

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}داشبورد{% endblock %}
+
+{% block content %}
+  <div class="card shadow p-4 mb-4">
+    <h4 class="mb-3"><i class="bi bi-person-circle"></i> خوش آمدی، {{ user.username }} 👋</h4>
+    <p><strong>ایمیل:</strong> {{ user.email }}</p>
+    <a href="/logout" class="btn btn-outline-danger mt-3">خروج از حساب</a>
+  </div>
+{% endblock %}

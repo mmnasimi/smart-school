@@ -1,0 +1,87 @@
+/* فونت و تنظیمات پایه */
+body {
+  font-family: 'Vazirmatn', 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+/* کانتینر کلی فرم‌ها */
+.container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffffdd;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+/* عنوان‌ها */
+h2, h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* فیلدهای فرم و دکمه */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: #f5f5f5;
+}
+
+button {
+  background-color: #74ebd5;
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #57c5b6;
+  transform: scale(1.03);
+}
+
+/* دکمه‌های صفحه اصلی */
+.main-login-button, .main-register-button {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.main-login-button {
+  background-color: #74ebd5;
+  color: white;
+}
+
+.main-login-button:hover {
+  background-color: #57c5b6;
+}
+
+.main-register-button {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.main-register-button:hover {
+  background: linear-gradient(to right, #ff6a7f, #ff85b3);
+  transform: scale(1.05);
+}
